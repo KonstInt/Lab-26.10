@@ -38,6 +38,9 @@ int DaysInRangeYear(int year1, int year2) {
 
 }
 
+int SeconsInHours(int hours) {
+    return hours * 60 * 60;
+}
 
 int main() {
 
