@@ -1,14 +1,15 @@
-﻿// ConsoleApplication1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// LabSource.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
+
 #include <iostream>
 #include <time.h>
 #include <chrono>
 #include <ctime>    
 
 using namespace std;
-bool IsLeapYear(DateTime date) {
+bool IsLeapYear(int what_year) {
     bool bLeapYear = false;
-    if ((date.Year % 4) == 0) {
+    if ((what_year % 4) == 0) {
         if ((what_year % 100) == 0) {
             bLeapYear = ((what_year % 400) == 0);
         }
@@ -17,11 +18,13 @@ bool IsLeapYear(DateTime date) {
         }
         // leap year
     }
+    return bLeapYear;
 }
 int main() {
-    
+
 
 }
+
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
