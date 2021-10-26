@@ -20,6 +20,10 @@ bool IsLeapYear(int what_year) {
     }
     return bLeapYear;
 }
+int SecondsInMinute() {
+    return 60;
+
+}
 int main() {
 
 
