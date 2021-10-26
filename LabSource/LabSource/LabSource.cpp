@@ -20,6 +20,25 @@ bool IsLeapYear(int what_year) {
     }
     return bLeapYear;
 }
+int DaysInYear(int year) {
+ 
+    if (IsLeapYear(year))
+        return 366;
+    else
+        return 365;
+
+}
+
+int DaysInRangeYear(int year1, int year2) {
+
+    int sum = 0;
+    for (int i = year1; i < year2; i++)
+        sum += DaysInYear(i);
+    return sum;
+
+}
+
+
 int main() {
 
 
